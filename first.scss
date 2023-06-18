@@ -1,0 +1,71 @@
+@import "reset";
+@import "font";
+
+// $black: black;
+// $red: red;
+// $myFont: Helvetica, sans-serif;
+
+// h1{
+//     font-family: $myFont;
+//     // background-color:$red;
+//     $black:red !global;
+//     color: $black;
+// }
+
+// h2{
+//     color: $black;
+// }
+
+// nav{
+//     ul{
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         li{
+//             font-size: 18px;
+//         }
+//     }
+
+//     li{
+//         display: inline-block;
+//     }
+
+//     a{
+//         display: block;
+//         text-decoration: none;
+//         padding: 6px 12px;
+//         font: {
+//             family: Helvetica, sans-serif;
+//             size: 18px;
+//             weight: bold;
+//         }
+//     }
+// }
+
+// @mixin default($color, $size:180px){
+//     font-family: 'Courier New', Courier, monospace;
+//     font-size: $size;
+//     color: $color;
+// }
+
+// h1{
+//     @include default(blue, 20px);
+// }
+
+// button{
+//     @include default(green);
+// }
+
+.container{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: $myColor;
+}
+
+.button{
+    @extend .container;
+    background-color: red;
+}
